@@ -1,0 +1,42 @@
+/* จัดการส่วน Hero Section (ภาพพื้นหลังด้านบน) */
+.hero-section {
+    /* ใช้ภาพตัวอย่างจาก Unsplash ที่คล้ายกับธรรมชาติ/เปลือกหอย */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh; /* ความสูงประมาณ 60% ของหน้าจอ */
+    min-height: 400px;
+}
+
+/* เพิ่ม Effect เล็กน้อยตอน Hover ปุ่ม */
+.hero-section .btn-light:hover {
+    background-color: #e2e6ea;
+    transform: translateY(-2px);
+    transition: all 0.3s;
+}
+
+/* ล็อคความสูงของรูปใน Card ให้เท่ากันทุกใบ */
+.service-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* ตกแต่ง Footer */
+.footer-links a {
+    color: #6c757d; /* สีเทาอ่อน */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #0d6efd; /* เปลี่ยนเป็นสีฟ้าเมื่อเอาเมาส์ชี้ */
+}
+
+.social-icons a:hover {
+    color: #0d6efd !important;
+}
+
+/* ปรับฟอนต์โดยรวม (ถ้าต้องการให้ดูทันสมัยขึ้น) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
