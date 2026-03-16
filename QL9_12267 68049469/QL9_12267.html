@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gundam Movie SPU - Premium Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 glow-text" href="#">SPU <span class="text-info">GUNDAM</span></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ภาพยนตร์
+                        </a>
+                        <ul class="dropdown-menu shadow-lg border-0" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Mobile Suit Gundam Unicorn</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile Suit Gundam Hathaway</a></li>
+                            <li><a class="dropdown-item" href="#">Gundam SEED Freedom</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#about">เกี่ยวกับเรา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#contact">ติดต่อเรา</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-banner">
+        <div class="text-center banner-text">
+            <h1 class="display-3 fw-bold text-uppercase tracking-wide">สัมผัสโลกของภาพยนตร์สุดมันส์</h1>
+            <p class="lead fs-4 mt-3">ทะยานสู่ห้วงอวกาศไปกับสุดยอดโมบิลสูทระดับตำนาน</p>
+            <a href="#movies" class="btn btn-outline-info btn-lg mt-3 rounded-pill px-5 fw-bold glow-btn">ดูแฟ้มข้อมูล <i class="fa-solid fa-chevron-down ms-2"></i></a>
+        </div>
+    </div>
+
+    <div id="movies" class="container my-5 py-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold d-inline-block border-bottom border-info border-3 pb-2 section-title">แฟ้มข้อมูลโมบิลสูท (ภาพยนตร์)</h2>
+        </div>
+        <div class="row g-5">
+            
+            <div class="col-md-4">
+                <div class="card h-100 premium-card">
+                    <div class="img-wrapper">
+                        <img src="https://gundam-official.com/media/Gundam_UC_RE_0096_Key_Visual_2842684523/Gundam_UC_RE_0096_Key_Visual_2842684523.png" class="card-img-top" alt="Gundam Unicorn">
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold mb-3">Mobile Suit Gundam Unicorn</h5>
+                        <button type="button" class="btn btn-cyber mt-auto fw-bold w-100" data-bs-toggle="modal" data-bs-target="#modalMovie1">
+                            <i class="fa-solid fa-satellite-dish me-2"></i> ดูรายละเอียด
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 premium-card">
+                    <div class="img-wrapper">
+                        <img src="https://resizing.flixster.com/TEkGx09zvlq0MGOn0QcwVtlfbjU=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p19950075_p_v13_aa.jpg" class="card-img-top" alt="Gundam Hathaway">
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold mb-3">Mobile Suit Gundam Hathaway</h5>
+                        <button type="button" class="btn btn-cyber mt-auto fw-bold w-100" data-bs-toggle="modal" data-bs-target="#modalMovie2">
+                            <i class="fa-solid fa-satellite-dish me-2"></i> ดูรายละเอียด
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 premium-card">
+                    <div class="img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Seedfreedomvisual.jpg" class="card-img-top" alt="Gundam SEED Freedom">
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold mb-3">Gundam SEED Freedom</h5>
+                        <button type="button" class="btn btn-cyber mt-auto fw-bold w-100" data-bs-toggle="modal" data-bs-target="#modalMovie3">
+                            <i class="fa-solid fa-satellite-dish me-2"></i> ดูรายละเอียด
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about" class="about-section py-5">
+        <div class="container text-center py-4">
+            <h2 class="mb-4 fw-bold text-info glow-text"><i class="fa-solid fa-globe"></i> เกี่ยวกับเรา</h2>
+            <p class="lead text-light w-75 mx-auto lh-lg">
+                ฐานทัพอวกาศส่วนตัวสำหรับคนรักกันดั้ม เว็บไซต์นี้เป็นศูนย์กลางในการรวบรวมแฟ้มข้อมูลปฏิบัติการ และเนื้อเรื่องย่อของภาพยนตร์แอนิเมชันระดับตำนาน เพื่อผู้ใช้งานในโคโลนี่ทุกคน
+            </p>
+        </div>
+    </div>
+
+    <div id="contact" class="container my-5 py-4">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold d-inline-block border-bottom border-primary border-3 pb-2 section-title">ติดต่อเรา (ส่งสัญญาณสื่อสาร)</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-9">
+                <div class="card premium-contact-card shadow-lg border-0 rounded-4">
+                    <div class="card-body p-5">
+                        <form>
+                            <div class="mb-4 input-glass">
+                                <label for="name" class="form-label fw-bold"><i class="fa-solid fa-user-astronaut me-2"></i>ชื่อ-นามสกุล (รหัสนักบิน)</label>
+                                <input type="text" class="form-control form-control-lg" id="name" placeholder="เช่น บานาจ ลิงก์" required>
+                            </div>
+                            <div class="mb-4 input-glass">
+                                <label for="email" class="form-label fw-bold"><i class="fa-solid fa-envelope me-2"></i>อีเมล</label>
+                                <input type="email" class="form-control form-control-lg" id="email" placeholder="pilot@anaheim.com" required>
+                            </div>
+                            <div class="mb-4 input-glass">
+                                <label for="message" class="form-label fw-bold"><i class="fa-solid fa-comment-dots me-2"></i>ข้อความ</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="ระบุพิกัดหรือข้อความของคุณที่นี่..." required></textarea>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-cyber-primary btn-lg px-5 rounded-pill fw-bold w-100">
+                                    <i class="fa-solid fa-paper-plane me-2"></i> ส่งข้อมูล
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="mb-4 social-icons">
+                <a href="https://www.facebook.com/AOMISN15" target="_blank" class="facebook-icon me-4"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/aomisn12" target="_blank" class="instagram-icon me-4"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="line-icon"><i class="fab fa-line"></i></a>
+            </div>
+            <p class="mb-0 text-info glow-text fw-bold tracking-wide">&copy; 2025 Movie By chakadee Potisumrit [68049469]</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalMovie1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content premium-modal">
+                <div class="modal-header border-info border-bottom">
+                    <h5 class="modal-title fw-bold text-info"><i class="fa-solid fa-film me-2"></i>Mobile Suit Gundam Unicorn (2010)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-5">
+                            <img src="https://borkormee.com/wp-content/uploads/2024/12/469007017_1140983627593381_8772807176916811672_n.jpg" class="img-fluid rounded shadow-lg" alt="Cover">
+                        </div>
+                        <div class="col-md-7 text-light">
+                            <p class="mb-2"><strong class="text-info">ผู้กำกับ:</strong> Kazuhiro Furuhashi</p>
+                            <p class="mb-3"><strong class="text-info">นักแสดงนำ (ให้เสียง):</strong> Koki Uchiyama, Ayumi Fujimura, Shuichi Ikeda</p>
+                            <div class="p-3 rounded bg-dark border border-secondary">
+                                <p class="mb-0 text-white-50"><strong>เนื้อเรื่องย่อ:</strong> ในปี U.C.0096 บานาจ ลิงก์ เด็กหนุ่มที่บังเอิญเข้าไปพัวพันกับความลับของ "กล่องลาพลาส" ที่กุมชะตากรรมของสหพันธ์โลก เขาได้บังคับโมบิลสูทสีขาว "ยูนิคอร์นกันดั้ม" เพื่อค้นหาความจริงที่จะเปลี่ยนอนาคตของมวลมนุษยชาติ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMovie2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content premium-modal">
+                <div class="modal-header border-info border-bottom">
+                    <h5 class="modal-title fw-bold text-info"><i class="fa-solid fa-film me-2"></i>Mobile Suit Gundam Hathaway (2021)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-5">
+                            <img src="https://cdn.animenewsnetwork.com/thumbnails/max450x450/cms/news.4/171144/hathaway.jpeg" class="img-fluid rounded shadow-lg" alt="Cover">
+                        </div>
+                        <div class="col-md-7 text-light">
+                            <p class="mb-2"><strong class="text-info">ผู้กำกับ:</strong> Shukou Murase</p>
+                            <p class="mb-3"><strong class="text-info">นักแสดงนำ (ให้เสียง):</strong> Kensho Ono, Reina Ueda, Junichi Suwabe</p>
+                            <div class="p-3 rounded bg-dark border border-secondary">
+                                <p class="mb-0 text-white-50"><strong>เนื้อเรื่องย่อ:</strong> ฮาธาเวย์ โนอา ชายหนุ่มผู้นำกลุ่มต่อต้านสหพันธ์โลก "มัฟตี้" ได้เริ่มแผนการลอบสังหารเหล่าผู้นำคอร์รัปชัน แต่การปรากฏตัวของโมบิลสูทสุดแกร่ง "เพเนโลเป้" ทำให้แผนการของเขาต้องเผชิญกับอุปสรรคครั้งใหญ่</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMovie3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content premium-modal">
+                <div class="modal-header border-info border-bottom">
+                    <h5 class="modal-title fw-bold text-info"><i class="fa-solid fa-film me-2"></i>Gundam SEED Freedom Special Edition</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-5">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKscurRhvZsb4zdyDxcTC2VhEzQCQ29X8vew&s" class="img-fluid rounded shadow-lg" alt="Cover">
+                        </div>
+                        <div class="col-md-7 text-light">
+                            <p class="mb-2"><strong class="text-info">ผู้กำกับ:</strong> Mitsuo Fukuda</p>
+                            <p class="mb-3"><strong class="text-info">นักแสดงนำ (ให้เสียง):</strong> Soichiro Hoshi, Rie Tanaka, Akira Ishida</p>
+                            <div class="p-3 rounded bg-dark border border-secondary">
+                                <p class="mb-0 text-white-50"><strong>เนื้อเรื่องย่อ:</strong> ภาคต่อสุดยิ่งใหญ่ของซีรีส์ SEED เมื่อ คิระ ยามาโตะ และ ลักส์ ไคลน์ ต้องเผชิญหน้ากับภัยคุกคามครั้งใหม่จากกลุ่มติดอาวุธที่หวังจะทำลายสันติภาพที่เพิ่งก่อตัวขึ้น พวกเขาจึงต้องกลับขึ้นขับโมบิลสูทอีกครั้งเพื่อปกป้องโลก</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
