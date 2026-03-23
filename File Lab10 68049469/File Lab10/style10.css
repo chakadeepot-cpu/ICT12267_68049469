@@ -1,0 +1,296 @@
+/* การตั้งค่าพื้นฐาน */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #5C544E; /* สีเทาอมน้ำตาลตุ่นๆ ดูละมุน */
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  /* ใช้ฟอนต์น่ารักมินิมอล */
+  font-family: 'Quicksand', 'M PLUS Rounded 1c', sans-serif;
+  background-color: #FAFAFA; /* พื้นหลังสีขาวออฟไวท์ สว่าง โปร่งโล่ง */
+  color: #5C544E;
+}
+
+/* ---------------- Header ---------------- */
+header {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02); /* เงาบางๆ ให้ดูมีมิติเบาๆ */
+}
+
+#headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #8B827A;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #9AA987; /* Hover สีชาเขียวมัทฉะตุ่นๆ */
+}
+
+/* ปุ่มแบบโค้งมน (Pill shape) สไตล์เกาหลี */
+.button {
+  background-color: #9AA987; /* สีชาเขียวละมุน */
+  color: white !important;
+  padding: 10px 24px;
+  border-radius: 25px; 
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #83936E;
+  transform: translateY(-2px);
+}
+
+/* ---------------- Carousel (อิงตาม Assignment 10 PDF) ---------------- */
+.carousel-image-1, .carousel-image-2, .carousel-image-3 {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-image-1 { background-image: url('images/pic14.jpg'); }
+.carousel-image-2 { background-image: url('images/pic13.jpg'); }
+.carousel-image-3 { background-image: url('images/pic10.jpg'); }
+
+/* บังคับตามโจทย์: สีขาว, ตัวหนา, 40px */
+.carousel-caption h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4); /* เงาฟุ้งๆ บางๆ ให้อ่านง่ายแต่ไม่ดุ */
+  margin-bottom: 30px;
+}
+
+/* ---------------- Layout ส่วนกลาง (Menu & Information) ---------------- */
+#contents {
+  max-width: 1200px;
+  margin: 60px auto 100px;
+  display: flex;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+#menu {
+  width: 70%;
+}
+
+#menu h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #5C544E;
+}
+
+#menu h2 span {
+  color: #D6A4A4; /* สีชมพูพาสเทลเล็กๆ สร้างกิมมิคความน่ารัก */
+}
+
+#menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* การ์ดเมนูเน้นโค้งมนและเงาบางๆ */
+#menu li {
+  width: 31%;
+  position: relative;
+  transition: all 0.4s ease;
+  background-color: #FFFFFF;
+  border-radius: 16px; /* มุมโค้งมนมาก */
+  box-shadow: 0 5px 20px rgba(139, 130, 122, 0.08); /* เงาสีเทาตุ่นๆ อ่อนๆ */
+  overflow: hidden;
+}
+
+#menu li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(139, 130, 122, 0.15);
+}
+
+#menu img {
+  border-radius: 16px 16px 0 0;
+  transition: opacity 0.3s;
+}
+
+#menu li:hover img {
+  opacity: 0.85;
+}
+
+#menu figcaption {
+  padding: 18px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5C544E;
+  text-align: center;
+}
+
+/* ป้ายสินค้าใหม่ สไตล์มินิมอล สีพาสเทล */
+#menu .new::before {
+  content: "New";
+  color: #fff;
+  background-color: #D6A4A4; /* สีชมพูตุ่นๆ พาสเทล */
+  padding: 4px 14px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-weight: 700;
+  border-radius: 20px; /* เป็นทรงกลมแคปซูล */
+  z-index: 1;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+/* ---------------- Information ---------------- */
+#info {
+  width: 28%;
+  background-color: #FFFFFF;
+  padding: 35px 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(139, 130, 122, 0.08);
+  align-self: flex-start;
+}
+
+#info h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #5C544E;
+}
+
+#info li {
+  margin-bottom: 18px;
+  border-bottom: 1px dashed #E6E0DA;
+  padding-bottom: 18px;
+}
+
+#info li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#info li span {
+  font-weight: 700;
+  color: #9AA987; /* ใช้วันที่เป็นสีชาเขียวอ่อน */
+  font-size: 13px;
+  background-color: #F3F6EF; /* ทำพื้นหลังวันที่เบาๆ ให้ดูน่ารัก */
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+#info li p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #8B827A;
+  line-height: 1.5;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  background-color: #F2EFE9; /* พื้นหลังสีครีมเบจ ไม่แข็งเกินไป */
+  padding: 40px 0;
+  color: #8B827A;
+}
+
+#footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+footer a {
+  color: #8B827A;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #9AA987;
+}
+
+#footerInner ul {
+  display: flex;
+  gap: 30px;
+}
+
+/* ---------------- Responsive (สำหรับมือถือ) ---------------- */
+@media screen and (max-width: 768px) {
+  #headerInner {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #contents {
+    flex-direction: column;
+  }
+
+  #menu, #info {
+    width: 100%;
+  }
+
+  #menu li {
+    width: 47%;
+  }
+
+  #footerInner {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #menu li {
+    width: 100%;
+  }
+}
